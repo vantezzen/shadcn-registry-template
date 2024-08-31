@@ -1,6 +1,8 @@
 # shadcn-registry-template
 
-This template repositry allows you to easily distribute your own registry for shadcn components.
+> Easily distribute your own registry for shadcn components.
+
+shadcn 2 and later allow installing components from a custom registry like `npx shadcn-ui@latest add https://raw.githubusercontent.com/vantezzen/auto-form/main/registry/auto-form.json`. This template allows you to easily create your own registry for your components.
 
 - [x] Demo page for developing components
 - [x] Automatic registry generation
