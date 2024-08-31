@@ -1,0 +1,20 @@
+{
+  "name": "cool-text",
+  "type": "registry:ui",
+  "registryDependencies": [
+    "button"
+  ],
+  "dependencies": [],
+  "devDependencies": [],
+  "tailwind": {
+    "config": {}
+  },
+  "cssVars": {},
+  "files": [
+    {
+      "path": "cool-text.tsx",
+      "content": "import React from \"react\";\n\nfunction CoolText({ children }: { children: React.ReactNode }) {\n  // @ts-expect-error Marquee is deprecated\n  return <marquee>{children}</marquee>;\n}\n\nexport default CoolText;\n",
+      "type": "registry:ui"
+    }
+  ]
+}

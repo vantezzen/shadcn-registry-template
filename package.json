@@ -1,0 +1,57 @@
+{
+  "name": "shadcn-registry-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vantezzen/shadcn-registry-template"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "build:demo": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "http-server registry",
+    "dev": "vite",
+    "dev:build": "nodemon --watch src --exec 'npm run build'",
+    "dev:server": "concurrently 'http-server dist' 'npm run dev:build'"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "chalk": "^5.3.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "concurrently": "^8.2.2",
+    "lucide-react": "^0.437.0",
+    "parse-github-url": "^1.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^22.5.1",
+    "@types/parse-github-url": "^1.0.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.4",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
+  },
+  "components": [
+    "cool-text"
+  ]
+}
