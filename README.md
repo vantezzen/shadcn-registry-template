@@ -25,11 +25,11 @@ or view the custom components on the [demo page](https://vantezzen.github.io/sha
 3. Edit `package.json` to include your own information. Most importantly, change the `repository` field to your own GitHub repository URL.
 4. Run `npm run dev` to develop components locally. You can add your components to the `src/components/ui` directory.
 5. Edit `registry.ts`. See [Registry Configuration](#registry-configuration) for more information.
-6. Run `npm run build` to build the registry.
+6. Run `npm run build` to build the registry and push your changes to GitHub to deploy the registry.
 
 ## Registry Configuration
 
-The registry is configured in `registry.ts`. The registry is an array of "registries", each object representing a component.
+The registry is configured in `registry.ts`. The registry is an array of "registries", each object representing a component. Don't worry, the registry has TypeScript support, so you'll get autocompletion and type checking to make sure your registry is valid.
 
 The syntax of this file uses the same syntax as `shadcn` requires for the final registries. Each object in the array can have the following fields:
 
