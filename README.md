@@ -8,6 +8,16 @@ shadcn 2 and later allow installing components from a custom registry like `npx 
 - [x] Automatic registry generation
 - [x] Automatic GitHub Pages deployment
 
+## Demo
+
+Install the `cool-text` component from this registry:
+
+```bash
+npx shadcn@latest add https://raw.githubusercontent.com/vantezzen/shadcn-registry-template/main/registry/cool-text.json
+```
+
+or view the custom components on the [demo page](https://vantezzen.github.io/shadcn-registry-template/).
+
 ## Usage
 
 1. Use the template by clicking the green "Use this template" button on the top right of the page.
